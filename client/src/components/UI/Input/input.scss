@@ -1,0 +1,37 @@
+.input {
+    border-top: none;
+    border-right: none;
+    border-left: none;
+    border-bottom: 3px solid #566885;
+    width: 100%;
+    outline: none;
+    height: 30px;
+    font-family: Roboto;
+    font-style: normal;
+    font-weight: bold;
+    font-size: 18px;
+    line-height: 21px;
+    color: #566885;
+
+    &::placeholder {
+        font-family: Roboto;
+        font-style: normal;
+        font-weight: bold;
+        font-size: 18px;
+        line-height: 21px;
+        color: #566885;
+    }
+    &:hover {
+        outline: none;
+        transform: scale(1.03);
+    }
+
+    &-error {
+        outline: none;
+        border-top: none;
+        border-right: none;
+        border-left: none;
+        border-bottom: 3px solid red;
+        color: red;
+    }
+}

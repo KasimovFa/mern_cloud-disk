@@ -1,0 +1,53 @@
+%text-header{
+    font-family: Roboto;
+    font-style: normal;
+    font-weight: normal;
+    font-size: 14px;
+    color: #566885;
+}
+
+.plate {
+  display: flex;
+}
+
+.filelist {
+    width: 100%;
+    position: relative;
+
+    &_header {
+        display: flex;
+        justify-content: space-between;
+        width: 100%;
+        padding-left: 60px;
+    }
+
+    &_name {
+        @extend %text-header;
+    }
+
+    &_date {
+        flex-basis: 100%;
+        margin-right: 40px;
+        text-align: right;
+        @extend %text-header;
+    }
+
+    &_size {
+        @extend %text-header;  
+    }
+}
+
+.file-enter-active {
+    animation: file-enter 500ms forwards;
+  }
+  
+  @keyframes file-enter {
+    0% {
+      opacity: 0;
+      transform: translateY(-50%);
+    }
+    100% {
+      opacity: 1;
+      transform: translateY(0);
+    }
+  }

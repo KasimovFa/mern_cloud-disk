@@ -1,0 +1,7 @@
+{
+    "serverPort" : 5000,
+    "dbUrl": "mongodb+srv://dbKas:41231fail@cloud.xt9d1.mongodb.net/myFirstDatabase?retryWrites=true&w=majority",
+    "secretKey": "kasimovfail",
+    "filePath": "C:\\Users\\Фаиль\\Desktop\\mern_disk\\server\\files",
+    "staticPath": "C:\\Users\\Фаиль\\Desktop\\mern_disk\\server\\static"
+  }

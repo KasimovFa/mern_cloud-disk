@@ -1,0 +1,119 @@
+.popup {
+    position: absolute;
+    top: 35%;
+    left: 30%;
+    width: 600px;
+    height: 150px;
+    background: #FFFFFF;
+    border-radius: 27px;
+    z-index: 4;
+
+    &_wrapper {
+        display: flex;
+        justify-content: center;
+        align-items: center;
+        padding: 20px;
+        height: 100%;
+        width: 100%;
+    }
+
+
+    &_input {
+        border-top: none;
+        border-right: none;
+        border-left: none;
+        border-bottom: 3px solid #566885;
+        width: 80%;
+        outline: none;
+        height: 30px;
+        font-family: Roboto;
+        font-style: normal;
+        font-weight: bold;
+        font-size: 18px;
+        line-height: 21px;
+        color: #566885;
+
+        &::placeholder {
+            font-family: Roboto;
+            font-style: normal;
+            font-weight: bold;
+            font-size: 18px;
+            line-height: 21px;
+            color: #566885;
+        }
+
+        &:hover {
+            outline: none;
+            transform: scale(1.03);
+        }
+    }
+
+    &_btn {
+        width: 118px;
+        height: 32px;
+        left: 837px;
+        top: 525px;
+        background: #566885;
+        border-radius: 12px;
+        font-family: Roboto;
+        font-style: normal;
+        font-weight: bold;
+        color: white;
+        outline: none;
+        border: none;
+        cursor: pointer;
+        margin-left: 20px;
+
+        &:hover {
+            outline: none;
+            transform: scale(1.03);
+        }
+    }
+
+    &_cl-btn-7 {
+        width: 40px;
+        height: 40px;
+        border-radius: 40px;
+        position: absolute;
+        top: 2px;
+        right: 10px;
+        z-index: 1;
+        cursor: pointer;
+
+        &:before {
+            content: '+';
+            color: #337AB7;
+            position: absolute;
+            z-index: 2;
+            transform: rotate(45deg);
+            font-size: 50px;
+            line-height: 1;
+            top: -5px;
+            left: 6px;
+            transition: all 0.3s cubic-bezier(0.77, 0, 0.2, 0.85);
+        }
+
+        &:after {
+            content: '';
+            position: absolute;
+            top: 0;
+            left: 0;
+            width: 40px;
+            height:40px;
+            border-radius: 100%;
+            background: #337AB7;
+            z-index: 1;
+            transition: all 0.3s cubic-bezier(0.77, 0, 0.2, 0.85);
+            transform: scale(0.01);
+        }
+
+        &:hover:after {
+            transform: scale(1);
+        }
+
+        &:hover:before {
+            transform: scale(0.8) rotate(45deg);
+            color: #fff;
+        }
+    }
+}

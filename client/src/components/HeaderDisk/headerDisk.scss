@@ -1,0 +1,132 @@
+#header_upload-input {
+    display: none;
+}
+
+.headerDisk {
+    width: 100%;
+    height: 200px;
+    margin-top: 10px;
+   
+    &_wrapper {
+        display: flex;
+        justify-content: space-between;
+        margin-top: 20px;
+    }
+
+    &_title {
+        font-family: Roboto;
+        font-style: normal;
+        font-weight: bold;
+        font-size: 24px;
+        line-height: 28px;
+        color: #566885;
+        text-align: center;
+    }
+
+    &_upload-label {
+        margin-left: 10px;
+        border: 1px solid #566885;
+        box-sizing: border-box;
+        width: 158px;
+        height: 34px;
+        border-radius: 14px;
+        font-family: Roboto;
+        font-style: normal;
+        font-weight: normal;
+        font-size: 14px;
+        line-height: 16px;
+        color: #566885;
+        padding: 7px 20px;
+        cursor: pointer;
+    }
+
+    &_btn-undo {
+        display: block;
+        width: 55px;
+        height: 34px;
+        border: 1px solid #566885;
+        box-sizing: border-box;
+        border-radius: 37px;
+        font-size: 25px;
+        cursor: pointer;
+
+        &:hover {
+            transform: scale(1.03);
+        }
+    }
+
+    &_btn-createDir {
+        width: 158px;
+        height: 34px;
+        border: 1px solid #566885;
+        box-sizing: border-box;
+        border-radius: 14px;
+        margin-top: 16px;
+        cursor: pointer;
+
+        &:hover {
+            transform: scale(1.03);
+        }
+    }
+    &_block-2 {
+       display: flex; 
+       width: 350px;
+       justify-content: space-between;
+       height: 25px;
+
+      & select {
+         width: 95px;
+         border: none;
+         background-color:#E9E6E6;
+         font-size: 16px;
+         color:#566885;
+         display: block;
+         font-weight: bold;
+         outline: none;
+         cursor: pointer;
+         font-family: inherit;
+         margin-right: 30px;
+
+         &:hover {
+            transform: scale(1.05);
+         }
+      }
+
+      & img {
+          cursor: pointer;
+          margin-right: 20px;
+      }
+
+      & img:hover {
+        transform: scale(1.1);
+      }
+      &-list {
+          cursor: pointer;
+          &:hover {
+            transform: scale(1.05);
+          }
+      }
+
+      &-plate {
+        cursor: pointer;
+        &:hover {
+            transform: scale(1.05);
+          }
+      }
+
+      &-search {
+          height: 25px;
+          outline: none;
+          border: none;
+          border-bottom: 2px solid #566885;
+          background-color:#E9E6E6;
+          width: 100px;
+          color: #566885;
+          font-weight: bold;
+          font-size: 15px;
+          margin-right: 10px;
+      }
+    }
+}
+
+

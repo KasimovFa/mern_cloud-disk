@@ -1,0 +1,47 @@
+.registration {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+
+    &_wrapper{
+        display: flex;
+        flex-direction: column;
+        width: 600px;
+        height: 400px;
+        align-items: center;
+        justify-content: space-between;
+        background-color: white;
+        border-radius: 20px;
+        padding: 30px;
+        align-self: center;
+        margin-top: 100px;
+    }
+
+    &__header {
+        font-size: 30px;
+        font-weight: 700;
+    }
+
+    &-button {
+        width: 200px;
+        height: 32px;
+        background: #566885;
+        border-radius: 12px;
+        font-family: Roboto;
+        font-style: normal;
+        font-weight: bold;
+        font-size: 22px;
+        line-height: 26px;
+        color: #FFFFFF;
+    }
+
+    &-button:hover {
+        cursor: pointer;
+        transform: scale(1.03);
+    }
+
+    &-little {
+        width: 500px;
+        height: 300px;  
+    }
+}

@@ -1,0 +1,132 @@
+%text-file {
+    font-family: Roboto;
+    font-style: normal;
+    font-weight: normal;
+    font-size: 14px;
+    color: #566885;
+}
+
+.container {
+    width: 100%;
+    height: 100%;
+}
+
+.file {
+    margin-top: 50px;
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    cursor: pointer;
+
+    &:hover {
+        transform: scale(1.02);
+    }
+
+    &_block-nameFile {
+        display: flex;
+        align-items: center;
+        padding: 0 60px;
+    }
+
+    &_block-inf {
+        display: flex;
+        justify-content: space-between;
+
+        &:hover .file_btn-downlod {
+            display: block;
+        }
+
+        &:hover .file_btn-delete {
+            display: block;
+        }
+    }
+
+    &_img {
+        position: absolute;
+        left: 0;
+    }
+
+    &_name {
+        @extend %text-file;
+    }
+
+    &_date {
+        @extend %text-file;
+
+        margin-right: 40px;
+    }
+
+    &_size {
+        @extend %text-file;
+    }
+
+    &_line {
+        width: 100%;
+        background: #566885;
+        height: 3px;
+        margin-top: 30px;
+    }
+
+    &_btn-downlod {
+        display: none;
+        width: 25px;
+        height: 25px;
+        margin: 0 20px;
+    }
+
+    &_btn-delete {
+        display: none;
+        width: 25px;
+        height: 25px;
+        margin: 0 20px;
+    }
+}
+
+.file-plate {
+    width: 150px;
+    height: 150px;
+    cursor: pointer;
+
+    &-wrapper {
+      text-align: center;
+    }
+
+    &:hover {
+        transform: scale(1.02);
+    }
+
+    &_img {
+        height: 100px;
+        width: 100px;
+    }
+    &-name {
+        @extend %text-file;  
+    }
+
+    &:hover .file-plate_btn-downlod {
+        display: block;
+    }
+
+    &:hover .file-plate_btn-delete {
+        display: block;
+    }
+
+    &_btn-downlod {
+        display: none;
+        width: 25px;
+        height: 25px;
+        margin-right: 20px;
+    }
+
+    &_btn-delete {
+        display: none;
+        width: 25px;
+        height: 25px;
+    }
+
+    &_wrapper-btn {
+        display: flex;
+        justify-content: center;
+        margin-top: 20px;
+    }
+}
